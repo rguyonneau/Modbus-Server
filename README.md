@@ -5,6 +5,7 @@ Here is presented a ModBus server implementation in C++. This implementation is 
 ## Modbus implemented functions
 
 The implemented Modbus functions are: 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x0F, 0x10
+
 The implemented Modbus exceptions are: 0x01, 0x02, 0x03, 0x04
 
 ##  ModbusServer class
@@ -21,11 +22,17 @@ Here is a main programm to test the modbus server classes. The main function tes
 
 ## compile and test
 With the makefile you only need to do (in the scr folder):
+
 $ make
+
 $ ./modbuserver
+
 it should display
+
     1 - response (6): 4  4  0  0  0  0
+
     2 - response (5): 10  0  0  0  2
+
     3 - response (6): 4  4  ab  cd  12  34
 
 This code has been tested on ubuntu 16.04 LTS
